@@ -44,3 +44,4 @@ There was a few things added from the original repo
 - Pass json-2-csv config as plugin config
 - Re-introduce properly deepness
 - More testing (media hasn't been tested)
+- Add imports with relation lists

@@ -1,15 +1,14 @@
-import { getTranslation } from './utils/getTranslation';
 import { PLUGIN_ID } from './pluginId';
 import { Initializer } from './components/Initializer';
 import { PluginIcon } from './components/PluginIcon';
-import {pluginPermissions} from './permissions';
+import { pluginPermissions } from './permissions';
 // @ts-ignore
 import { Alerts } from './components/Injected/Alerts/Alerts';
 // @ts-ignore
 import { InjectedImportCollectionType } from './components/InjectedImportCollectionType/InjectedImportCollectionType';
 // @ts-ignore
 import { InjectedExportCollectionType } from './components/InjectedExportCollectionType/InjectedExportCollectionType';
-import translations from "./translations";
+import {prefixPluginTranslations} from "./utils/prefixPluginTranslations";
 
 export default {
   register(app: any) {
@@ -36,6 +35,7 @@ export default {
     });
   },
 
+
   bootstrap(app:any) {
     app.getPlugin('content-manager').injectComponent('listView', 'actions', {
       name: `${PLUGIN_ID}-alerts`,
@@ -51,20 +51,24 @@ export default {
     });
   },
 
-  async registerTrads(app: any) {
-    const { locales } = app;
+  async registerTrads({ locales }: {locales: any}) {
+    const importedTrads = await Promise.all(
+      locales.map((locale: any) => {
+        return import(`./translations/${locale}.json`)
+          .then(({ default: data }) => {
+            return {
+              data: prefixPluginTranslations(data, 'users-permissions'),
+              locale,
+            };
+          })
+          .catch(() => {
+            return {
+              data: {},
+              locale,
+            };
+          });
+      })
+    );
 
-    const importedTranslations = [
-      {
-        data: translations.en,
-        locale: 'en'
-      },
-      {
-        data: translations.fr,
-        locale: 'fr'
-      }
-    ];
-
-    return importedTranslations;
-  },
-};
+    return Promise.resolve(importedTrads);
+  },};

@@ -4,7 +4,7 @@ const prefixPluginTranslations = (trad: any, pluginId: any) => {
 	}
 
 	return Object.keys(trad).reduce((acc: any, current) => {
-		acc[`${pluginId}.${current}`]  = trad[current];
+		acc[`${pluginId}.plugin.${current}`]  = trad[current];
 		return acc;
 	}, {});
 };

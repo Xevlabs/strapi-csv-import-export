@@ -13,8 +13,6 @@
   "strapi-csv-import-export.plugin.cta.import": "Import",
 
   "strapi-csv-import-export.plugin.data-format.csv": "CSV",
-  "strapi-csv-import-export.plugin.data-format.json": "JSON [deprecated]",
-  "strapi-csv-import-export.plugin.data-format.json-v2": "JSON (v2)",
 
   "strapi-csv-import-export.plugin.form.field.id-field.hint": "Choose the field used as a unique identifier",
   "strapi-csv-import-export.plugin.form.field.id-field.label": "Id Field",

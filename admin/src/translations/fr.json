@@ -13,8 +13,6 @@
   "strapi-csv-import-export.plugin.cta.import": "Importer",
 
   "strapi-csv-import-export.plugin.data-format.csv": "CSV",
-  "strapi-csv-import-export.plugin.data-format.json": "JSON [obsolète]",
-  "strapi-csv-import-export.plugin.data-format.json-v2": "JSON (v2)",
 
   "strapi-csv-import-export.plugin.form.field.id-field.hint": "Choisissez le champ utilisé comme identifiant unique",
   "strapi-csv-import-export.plugin.form.field.id-field.label": "Champ ID",

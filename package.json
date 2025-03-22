@@ -1,6 +1,6 @@
 {
   "name": "strapi-csv-import-export",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Import export with csv for strapi 5",
   "keywords": [],
   "license": "MIT",
@@ -69,5 +69,14 @@
     "name": "strapi-csv-import-export",
     "displayName": "Import Export CSV",
     "description": "Import export with CSV for strapi 5"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xevlabs/strapi-csv-import-export.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Xevlabs/strapi-csv-import-export/issues"
+  },
+  "homepage": "https://github.com/Xevlabs/strapi-csv-import-export#readme"
 }

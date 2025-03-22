@@ -57,7 +57,7 @@ export default {
         return import(`./translations/${locale}.json`)
           .then(({ default: data }) => {
             return {
-              data: prefixPluginTranslations(data, 'users-permissions'),
+              data: prefixPluginTranslations(data, PLUGIN_ID),
               locale,
             };
           })

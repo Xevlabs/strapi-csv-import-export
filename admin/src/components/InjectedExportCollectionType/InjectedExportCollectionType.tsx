@@ -4,7 +4,7 @@ import { ExportModal } from '../ExportModal/ExportModal';
 import pluginId from "../../../../server/src/utils/pluginId";
 import {useSlug} from "../../hooks/useSlug";
 
-export const InjectedExportCollectionType = () => {
+export const InjectedExportCollectionType:  React.FC = () => {
   const { get } = useFetchClient();
   const [canExport, setCanExport] = useState(false);
   const { slug } = useSlug();

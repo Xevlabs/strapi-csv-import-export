@@ -6,7 +6,6 @@ import { pluginPermissions } from './permissions';
 import { Alerts } from './components/Injected/Alerts/Alerts';
 // @ts-ignore
 import { InjectedImportCollectionType } from './components/InjectedImportCollectionType/InjectedImportCollectionType';
-// @ts-ignore
 import { InjectedExportCollectionType } from './components/InjectedExportCollectionType/InjectedExportCollectionType';
 import {prefixPluginTranslations} from "./utils/prefixPluginTranslations";
 

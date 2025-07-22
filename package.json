@@ -1,6 +1,6 @@
 {
   "name": "strapi-csv-import-export",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Import export with csv for strapi 5",
   "keywords": [],
   "license": "MIT",

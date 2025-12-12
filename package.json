@@ -1,6 +1,6 @@
 {
   "name": "strapi-csv-import-export",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Import export with csv for strapi 5",
   "keywords": [],
   "license": "MIT",
@@ -38,7 +38,7 @@
     "@monaco-editor/react": "^4.7.0",
     "@uiw/react-codemirror": "^4.25.3",
     "csvtojson": "^2.0.14",
-    "joi": "^17.13.3",
+    "joi": "^18.0.2",
     "json-2-csv": "^5.5.10",
     "react-intl": "^6.8.9",
     "react-singleton-hook": "^4.0.1"
@@ -47,6 +47,7 @@
     "@strapi/sdk-plugin": "^5.3.2",
     "@strapi/strapi": "^5.32.0",
     "@strapi/typescript-utils": "^5.32.0",
+    "@types/is-hotkey": "^0.1.10",
     "@types/react": "^18.3.27",
     "@types/react-dom": "^18.3.7",
     "prettier": "^3.7.4",

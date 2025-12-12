@@ -5,7 +5,6 @@ import last from 'lodash/last';
 import trim from 'lodash/trim';
 import os from 'os';
 import path from 'path';
-import fetch from 'node-fetch';
 import { isObjectSafe } from '../../../../libs/objects.js';
 
 async function findOrImportFile(fileEntry, user, { allowedFileTypes }) {

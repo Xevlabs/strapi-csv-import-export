@@ -1,8 +1,15 @@
 {
   "extends": "@strapi/typescript-utils/tsconfigs/admin",
-  "include": ["./src", "./custom.d.ts"],
+  "include": [
+    "./src",
+    "./custom.d.ts"
+  ],
   "compilerOptions": {
     "rootDir": "../",
-    "baseUrl": "."
+    "baseUrl": ".",
+    "typeRoots": [
+      "./src/types",
+      "./node_modules/@types"
+    ]
   }
 }

@@ -35,29 +35,28 @@
     "watch:link": "strapi-plugin watch:link"
   },
   "dependencies": {
-    "@monaco-editor/react": "^4.6.0",
-    "@uiw/react-codemirror": "^4.23.5",
-    "csvtojson": "^2.0.10",
+    "@monaco-editor/react": "^4.7.0",
+    "@uiw/react-codemirror": "^4.25.3",
+    "csvtojson": "^2.0.14",
     "joi": "^17.13.3",
-    "json-2-csv": "^5.5.9",
-    "react-intl": "^6.7.2",
+    "json-2-csv": "^5.5.10",
+    "react-intl": "^6.8.9",
     "react-singleton-hook": "^4.0.1"
   },
   "devDependencies": {
-    "@strapi/sdk-plugin": "^5.2.6",
-    "@strapi/strapi": "^5.0.4",
-    "@strapi/typescript-utils": "^5.0.4",
-    "@types/react": "^18.3.11",
-    "@types/react-dom": "^18.3.0",
-    "prettier": "^3.3.3",
+    "@strapi/sdk-plugin": "^5.3.2",
+    "@strapi/strapi": "^5.32.0",
+    "@strapi/typescript-utils": "^5.32.0",
+    "@types/react": "^18.3.27",
+    "@types/react-dom": "^18.3.7",
+    "prettier": "^3.7.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.26.2",
-    "styled-components": "^6.1.13",
-    "typescript": "^5.6.3"
+    "react-router-dom": "^6.30.2",
+    "styled-components": "^6.1.19",
+    "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "@strapi/sdk-plugin": "^5.2.6",
     "@strapi/strapi": "^5.0.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

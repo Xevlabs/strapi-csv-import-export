@@ -17,4 +17,4 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - run: npm i -g npm@latest
       - run: npm ci
-      - run: npm publish --access public
+      - run: NODE_AUTH_TOKEN="" npm publish --access public --provenance

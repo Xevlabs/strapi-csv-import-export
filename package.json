@@ -73,7 +73,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Xevlabs/strapi-csv-import-export.git"
+    "url": "https://github.com/Xevlabs/strapi-csv-import-export.git"
   },
   "bugs": {
     "url": "https://github.com/Xevlabs/strapi-csv-import-export/issues"

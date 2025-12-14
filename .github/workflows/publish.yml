@@ -11,12 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       # Setup .npmrc file to publish to npm
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: '22.x'
           registry-url: 'https://registry.npmjs.org'
-      - name: Clear auth token for OIDC
-        run: export NODE_AUTH_TOKEN=""
       - run: npm i -g npm@latest
       - run: npm ci
       - run: npm publish --access public
